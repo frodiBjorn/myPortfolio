@@ -2,8 +2,12 @@
 import React from 'react';
 
 class Eyes extends React.Component {
+  constructor(props) {
+    super(props);
+    this.canvasRef = React.createRef();
+  }
   componentDidMount() {
-    this.canvas = this.refs.canvas;
+    this.canvas = this.canvasRef.current;
     this.ctx = this.canvas.getContext('2d');
     this.canvas.width = this.canvas.offsetWidth;
     this.canvas.height = this.canvas.offsetHeight;
@@ -98,7 +102,7 @@ class Eyes extends React.Component {
   render() {
     return (
       <canvas
-        ref="canvas"
+        ref={this.canvasRef}
         style={{
           position: 'fixed',
           top: 0,

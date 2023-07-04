@@ -2,7 +2,8 @@ import styles from './DownloadBtn.module.css';
 
 const DownloadBtn = () => {
   const handleDownload = () => {
-    const fileUrl = '/CV.pdf';
+    const fileUrl = './downloads/CV.pdf';
+    console.log(fileUrl);
     const link = document.createElement('a');
     link.href = fileUrl;
     link.setAttribute('download', 'CV_Fedotovsky.pdf');

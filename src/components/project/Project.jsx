@@ -6,7 +6,7 @@ const Project = (props) => {
   const { img, title, id } = props.project;
   return (
     <div>
-      <Link to={`/project/${id}`}>
+      <Link to={`/myPortfolio/project/${id}`}>
         <li className="project">
           <div>
             <img src={img} alt={title} className="project__img" />
