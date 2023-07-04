@@ -1,0 +1,23 @@
+import Project from '../components/project/Project';
+import { projects } from '../helpers/projectsList';
+import Eyes from '../components/eye/eyes';
+
+const Projects = () => {
+  return (
+    <>
+      <Eyes />
+      <main className="section">
+        <div className="container">
+          <h2 className="title-1">Projects</h2>
+          <ul className="projects">
+            {projects.map((project) => (
+              <Project key={project.id} project={project} />
+            ))}
+          </ul>
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Projects;

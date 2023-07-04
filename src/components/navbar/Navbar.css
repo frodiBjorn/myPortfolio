@@ -1,0 +1,84 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	padding: 20px 0;
+	background-color: var(--nav-bg);
+	background-image: url('./../../assets/img/Meteor.svg');
+	background-size: 20%;
+	border-bottom: 1px solid var(--nav-border);
+	color: var(--nav-text);
+	letter-spacing: normal;
+}
+
+.nav-row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+	margin-right: auto;
+	color: var(--nav-text);
+	font-size: 24px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-list__link {
+	color: var(--nav-text);
+	transition: all 0.2s ease-in;
+	display: block;
+	transform: scale(1);
+	opacity: 1;
+
+}
+
+.nav-list__link:hover {
+	display: block;
+	opacity: 0.8;
+	transform: scale(1.2);
+}
+
+.nav-list__link.active {
+	display: block;
+	position: relative;
+	transform: scale(1.2);
+}
+
+
+.nav-list__link::before,
+.nav-list__link.active::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: block;
+	height: 2px;
+	width: 0;
+	background-color: var(--accent);
+	transition: width 0.2s ease-in;
+}
+
+.nav-list__link.active::before {
+	width: 100%;
+}
