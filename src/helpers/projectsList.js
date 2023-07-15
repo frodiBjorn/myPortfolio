@@ -13,6 +13,7 @@ import postsApp from './../assets/img/projects/postsApp.jpg';
 import reactGameShop from './../assets/img/projects/reactGameShop.jpg';
 import reactShop from './../assets/img/projects/reactShop.jpg';
 import reactMovies from './../assets/img/projects/reactMovies.jpg';
+import minesweeper from './../assets/img/projects//minesweeper.jpg';
 
 const projects = [
   {
@@ -149,6 +150,15 @@ const projects = [
     imgBig: reactMovies,
     githubLink: 'https://github.com/frodiBjorn/react-movies',
     deploy: 'https://frodibjorn.github.io/react-movies/',
+  },
+  {
+    id: 16,
+    title: 'Mineswewper',
+    skills: 'Html, Css, JS',
+    img: minesweeper,
+    imgBig: minesweeper,
+    githubLink: 'https://github.com/frodiBjorn/minesweeper',
+    deploy: 'https://frodibjorn.github.io/minesweeper/',
   },
 ];
 export { projects };
