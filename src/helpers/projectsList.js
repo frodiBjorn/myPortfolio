@@ -153,7 +153,7 @@ const projects = [
   },
   {
     id: 16,
-    title: 'Mineswewper',
+    title: 'Minesweeper',
     skills: 'Html, Css, JS',
     img: minesweeper,
     imgBig: minesweeper,
