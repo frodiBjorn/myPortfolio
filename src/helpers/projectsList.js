@@ -22,7 +22,7 @@ const projects = [
     skills: 'React, Html, Css, JS',
     img: postsApp,
     imgBig: postsApp,
-    githubLink: 'https://github.com/frodiBjorn/excel-course',
+    githubLink: 'https://github.com/frodiBjorn/postsApp',
     deploy: 'https://frodibjorn.github.io/postsApp/',
   },
   {
