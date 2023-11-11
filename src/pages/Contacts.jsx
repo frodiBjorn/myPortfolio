@@ -1,11 +1,8 @@
-import Eyes from '../components/eye/eyes';
 const Contacts = () => {
   return (
     <>
       <main className="section footer-section">
-        <div className="eyes-container">
-          <Eyes />
-        </div>
+        <div className="eyes-container"></div>
         <div className="container ">
           <h1 className="title-1">Contacts</h1>
           <ul className="content-list">
